@@ -1,0 +1,612 @@
+*{
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    margin: 1%;
+}
+
+
+.header{
+    color: #604CC3;
+    border-bottom: 2px solid #FF7F3E; 
+}
+
+
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.container .noteContent{
+    margin-top: 1%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 50px;
+}
+
+.login{
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 35%;
+    background-color: #FFF6E9;
+    padding: 1.25%;
+    padding-bottom: 15px;
+    border: 1px solid #FF7F3E;
+}
+
+.login h2{
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.login input{
+    margin-left: 3.5%;
+    padding: 2%;
+}
+
+.login input:hover{
+    padding: 2%;
+    border: none;
+    outline: none;
+}
+
+.login .loginBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.register{
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 35%;
+    background-color: #FFF6E9;
+    padding: 1.25%;
+    padding-bottom: 15px;
+    border: 1px solid #FF7F3E;
+}
+
+.register h2{
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.register input{
+    margin-left: 3.5%;
+    padding: 2%;
+}
+
+.register input:hover{
+    padding: 2%;
+    border: none;
+    outline: none;
+}
+
+.register button{
+    margin-left: 35%;
+}
+
+.form{
+    height: 300px;
+    padding: 1%;
+    background-color: #FFF6E9;
+    border: 1px solid #FF7F3E;
+    padding-left: 7%;
+}
+
+
+form input, textarea{
+    width: 85%;
+    font-size: 1rem;
+    border: none;
+}
+
+form input:hover{
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.15);
+}
+
+form textarea:hover{
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.15);
+}
+
+form button{
+    border: none;
+    background-color: #80C4E9;
+    font-size: 1.2rem;
+}
+
+form button:hover{
+    background-color: #604CC3;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.7s;
+}
+
+textarea{
+    resize:none;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3%;
+}
+
+.updateBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.updateBtn .btnMargin{
+    margin-left: 0 !important;
+}
+
+.notes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.noteContent .form button{
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+.note{
+    border: 1px solid #FF7F3E;
+    padding: 5%;
+    height: auto;
+}
+
+.note:hover{
+    border: none;
+    box-shadow: 0px 0px 125px #f8dfd3;
+}
+
+.note h2{
+    color: #604CC3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.content{
+    height: 135px;
+}
+
+.note .btn .noteBtn{
+    border: none;
+    background-color: #80C4E9;
+    font-size: 1.2rem;
+}
+
+.note .btn .noteBtn:hover{
+    background-color: #604CC3;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.7s;
+}
+
+.sessionLoggedOut{
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .login{
+        width: 65%;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+    .register{
+        width: 65%;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+    .container .noteContent{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form{
+        width: 60%;
+        margin-left: 15%;
+        padding: 1%;
+        padding-left: 7%;
+        background-color: #FFF6E9;
+        border: 1px solid #FF7F3E;
+    }
+
+    .noteContent .form .updateArea .updateBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .noteContent .form .updateArea .updateBtn button{
+        font-size: 1.07rem;
+        margin-left: 0%;
+        padding: 1%;
+    }
+
+    .notes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note{
+        border: 1px solid #FF7F3E;
+        padding: 5%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .login{
+        width: 50%;
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+    
+    .register{
+        width: 50%;
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+
+    .register input{
+        font-size: 1.25rem;
+        padding: 1%;
+    }
+
+    .register input:hover{
+        font-size: 1.25rem;
+        padding: 1%;
+    }
+
+    .container .noteContent{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form{
+        width: 60%;
+        margin-left: 15%;
+        padding: 1%;
+        padding-left: 7%;
+        background-color: #FFF6E9;
+        border: 1px solid #FF7F3E;
+    }
+
+    .noteContent .form .updateArea .updateBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .noteContent .form .updateArea .updateBtn button{
+        font-size: 1.07rem;
+        margin-left: 0%;
+        padding: 1%;
+    }
+
+    .notes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note{
+        border: 1px solid #FF7F3E;
+        padding: 5%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .login{
+        width: 50%;
+        padding: 3%;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+    .login h2{
+        font-size: 2rem;
+    }
+
+    .login input{
+        font-size: 1.25rem;
+        padding: 3%;
+    }
+
+    .login input:hover{
+        font-size: 1.25rem;
+        padding: 3%;
+    }
+
+    .login button{
+        padding: 3%;
+    }
+
+    .register{
+        width: 50%;
+        padding: 3%;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+    .register h2{
+        font-size: 2rem;
+    }
+
+    .register input{
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+
+    .register input:hover{
+        font-size: 1.5rem;
+        padding: 3%;
+    }
+
+    .register button{
+        font-size: 1.25rem;
+        padding: 3%;
+    }
+
+    .container .noteContent{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form{
+        width: 45%;
+        height: auto;
+        margin-left: 25%;
+        padding: 1%;
+        padding-left: 7%;
+        background-color: #FFF6E9;
+        border: 1px solid #FF7F3E;
+    }
+
+    .form input, textarea{
+        font-size: 1.5rem; 
+    }
+
+    .form .inputArea h2{
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .noteContent .form .updateArea .updateBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .noteContent .form .updateArea .updateBtn button{
+        font-size: 1.07rem;
+        margin-left: 0%;
+        padding: 1%;
+    }
+
+    .notes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note{
+        border: 1px solid #FF7F3E;
+        padding: 5%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+    .login{
+        width: 50%;
+        padding: 2%;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+    .login h2{
+        font-size: 2rem;
+    }
+
+    .login input{
+        font-size: 1.75rem;
+        padding: 2%;
+    }
+
+    .login input:hover{
+        font-size: 1.75rem;
+        padding: 2%;
+    }
+
+    .login button{
+        font-size: 1.5rem;
+        padding: 2%;
+    }
+
+    .register{
+        width: 50%;
+        padding: 2%;
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
+    .register h2{
+        font-size: 2.5rem;
+    }
+
+    .register input{
+        font-size: 1.75rem;
+        padding: 2%;
+    }
+
+    .register input:hover{
+        font-size: 1.75rem;
+        padding: 2%;
+    }
+
+    .register button{
+        font-size: 1.75rem;
+        padding: 2%;
+    }
+
+    .container .noteContent{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+
+    .form{
+        width: 90%;
+        height: 30%;
+        padding: 1%;
+        padding-left: 2%;
+        background-color: #FFF6E9;
+        border: 1px solid #FF7F3E;
+    }
+
+    .form input, textarea{
+        font-size: 1.5rem; 
+    }
+
+    .form h2{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .noteContent .form .updateArea .updateBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10%;
+    }
+
+    .noteContent .form .updateArea .updateBtn button{
+        font-size: 1.35rem;
+        margin-left: 0%;
+        padding: 1.5%;
+    }
+
+    .notes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .note{
+        border: 1px solid #FF7F3E;
+        padding: 5%;
+        width: 80%;
+    }
+
+    .note h2{
+        font-size: 1.75rem;
+    }
+    .note p{
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape){
+    .login{
+        width: 30%;
+        margin-top: 5%;
+        margin-left: 30%;
+    }
+
+    .login input{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .login input:hover{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .login button{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .register{
+        width: 30%;
+        margin-top: 2%;
+        margin-left: 30%;
+    }
+
+    .register h2{
+        font-size: 1.5rem;
+    }
+
+    .register input{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .register input:hover{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .register button{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+}
+
+@media (min-width: 1200px) and (orientation: landscape){
+    .login{
+        width: 30%;
+        margin-top: 5%;
+        margin-left: 32%;
+    }
+
+    .login input{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .login input:hover{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .login button{
+        font-size: 1.25rem;
+        padding: 2%;
+    }
+
+    .register{
+        width: 30%;
+        margin-top: 5%;
+        margin-left: 33%;
+    }
+}
