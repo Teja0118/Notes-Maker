@@ -69,11 +69,11 @@ Notes:
 
 ```powershell
 # From project root
-cd 'D:\Projects\Notes Maker\server'
+cd <server-directory-path>
 
 npm install
 
-cd ..\client
+cd <client-directory-path>
 npm install
 ```
 
@@ -105,12 +105,12 @@ DB_PORT=5432
 
 ```powershell
 # Shell 1: start server
-cd <server-path>
+cd <server-directory-path>
 
 npm run start
 
 # Shell 2: start client
-cd <client-directory>
+cd <client-directory-path>
 
 npm start
 ```
