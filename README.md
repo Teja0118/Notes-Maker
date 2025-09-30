@@ -105,12 +105,12 @@ DB_PORT=5432
 
 ```powershell
 # Shell 1: start server
-cd 'D:\Projects\Notes Maker\server'
+cd <server-path>
 
 npm run start
 
 # Shell 2: start client
-cd 'D:\Projects\Notes Maker\client'
+cd <client-directory>
 
 npm start
 ```
